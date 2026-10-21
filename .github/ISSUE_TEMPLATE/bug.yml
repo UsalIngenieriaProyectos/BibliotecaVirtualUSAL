@@ -1,0 +1,100 @@
+name: Reporte de bug
+description: Un comportamiento del sistema que difiere del esperado.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        En el título poné una descripción breve y específica del problema.
+        Quien lo corrija tiene que poder reproducirlo sin preguntarte nada.
+
+  - type: dropdown
+    id: rol
+    attributes:
+      label: Rol de usuario
+      description: Rol con el que se detectó el bug.
+      options:
+        - Alumno
+        - Profesor
+        - Administrador
+        - Sin sesión iniciada
+    validations:
+      required: true
+
+  - type: textarea
+    id: precondiciones
+    attributes:
+      label: Precondiciones
+      description: Estado o datos necesarios antes de reproducirlo.
+      placeholder: |
+        - Tener sesión iniciada.
+        - Contar con un archivo de 60 MB.
+    validations:
+      required: true
+
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducir
+      description: Secuencia numerada de acciones.
+      placeholder: |
+        1. Ingresar a la pantalla de carga de archivos.
+        2. Seleccionar el archivo de 60 MB.
+        3. Hacer clic en "Cargar".
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+      description: Lo que debería suceder.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado actual
+      description: Lo que realmente sucede.
+    validations:
+      required: true
+
+  - type: input
+    id: entorno
+    attributes:
+      label: Entorno
+      description: Ambiente, navegador o dispositivo y versión.
+      placeholder: QA, Google Chrome 129, Windows 11
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Evidencias
+      description: Capturas de pantalla, videos o logs. Podés arrastrar las imágenes acá.
+
+  - type: dropdown
+    id: severidad
+    attributes:
+      label: Severidad
+      description: La asigna quien reporta.
+      options:
+        - Crítica — el sistema no funciona, hay pérdida de datos o una falla de seguridad
+        - Alta — una funcionalidad principal no funciona o funciona mal
+        - Media — falla parcial o hay una forma alternativa de hacer la tarea
+        - Baja — problema visual o de texto que no afecta el funcionamiento
+    validations:
+      required: true
+
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: Prioridad
+      description: La define el equipo. Si no sabés, dejala vacía.
+      options:
+        - Alta — se corrige de inmediato
+        - Media — se corrige dentro de la iteración en curso
+        - Baja — se corrige cuando no haya tareas más urgentes
