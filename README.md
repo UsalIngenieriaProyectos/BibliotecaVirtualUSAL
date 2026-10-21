@@ -8,9 +8,28 @@ se instala en una PC y los usuarios entran desde el navegador por la red local.
 
 ---
 
+## Estructura del repo
+
+```
+backend/              API en Spring Boot
+frontend/             Aplicación web en Next.js
+docs/                 Diagramas, diccionario de datos, propuesta funcional
+docker-compose.yml    Levanta base, backend y frontend juntos
+```
+
 ## Instalación
 
 > _Pendiente: completar con el procedimiento paso a paso cuando ya hayamos instalado._
+
+### Para instalar en la PC
+
+Se instala con Docker, igual que el entorno de QA: lo que se prueba es lo mismo que se instala.
+
+```bash
+git clone https://github.com/UsalIngenieriaProyectos/BibliotecaVirtualUSAL.git
+cd BibliotecaVirtualUSAL
+docker compose up -d
+```
 
 ## Cómo colaborar
 
