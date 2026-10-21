@@ -8,16 +8,6 @@ se instala en una PC y los usuarios entran desde el navegador por la red local.
 
 ---
 
-## Stack
-
-| Parte | Tecnología |
-|---|---|
-| Backend | Java 23 + Spring Boot |
-| Frontend | Next.js + React + TypeScript |
-| Base de datos | MySQL 8.0 |
-| Tests | JUnit |
-| Entorno de QA | Render (Docker) + Aiven (MySQL) |
-
 ## Estructura del repo
 
 ```
@@ -30,17 +20,6 @@ docker-compose.yml    Levanta base, backend y frontend juntos
 ## Instalación
 
 > _Pendiente: completar con el procedimiento paso a paso cuando ya hayamos instalado._
-
-### Para desarrollar
-
-Requisitos:
-- JDK 23
-- Node.js (LTS)
-- Docker Desktop
-- Git
-
-Los comandos para levantar backend y frontend se completan cuando cada equipo suba el
-esqueleto de su carpeta.
 
 ### Para instalar en la PC
 
@@ -76,18 +55,6 @@ docker compose up -d
 6. Se hace un *merge* a la rama Main. 
 
 **IMPORTANTE:** Antes de cualquier PR, se debe probar que compile correctamente y fijarse de no subir datos sensibles.
-
-## Base de datos de QA (Aiven)
-
-El plan de Aiven tiene **1 GB** en total. Para no llenarlo:
-- Probar con archivos chicos.
-- Borrar los datos de prueba que ya no se usen.
-- Las credenciales de conexión **nunca** se suben al repo: van en un `.env` local.
-
-## Reporte de bugs
-
-Los bugs se cargan en [Issues](../../issues/new/choose) con la plantilla **"Reporte de bug"**,
-que agrega la etiqueta `bug`. Cuando el bug se corrige y se verifica en QA, se cierra el issue.
 
 ## Integrantes
 
