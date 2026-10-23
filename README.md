@@ -84,7 +84,3 @@ Antes de egresar o dejar el proyecto, se deben seguir los siguientes pasos:
 4. Se revoca el acceso a los owners anteriores (excluyendo a Germán)
 
 **El repositorio NO puede, bajo ninguna circunstancia, quedarse sin owners.**
-
-## Contacto
-
-- Coordinación docente: Germán Buchniv, director de la carrera
