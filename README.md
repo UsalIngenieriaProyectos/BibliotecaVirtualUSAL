@@ -67,6 +67,7 @@ docker compose up -d
 | Lucio Palmucci | [@LucioPalmucci](https://github.com/LucioPalmucci) | 2026 |
 | _completar_ | [@Roust0406](https://github.com/Roust0406) | 2026 |
 | Angela Aguilar | [@Angela-Aguilar](https://github.com/Angela-Aguilar) | 2026 |
+| Facundo Rodriguez | [@FacundoRodriguezGit](https://github.com/FacundoRodriguezGit) | 2026 |
 
 ### Responsable de la facultad
 
